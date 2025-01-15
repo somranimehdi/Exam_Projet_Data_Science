@@ -23,3 +23,9 @@ This project utilizes machine learning and computer vision to automatically dete
 
 ## Final Output
 A web app where users upload an image to receive traffic sign predictions instantly.
+
+## Report Link
+[Google Docs]([https://www.genome.gov/](https://docs.google.com/document/d/1SPHj5NHNn2IuBVOl9mcYAYWXMtXRJpJmp94xfVFGGE0/edit?usp=sharing))
+
+## Presentation Link
+[Google Slides]([[https://www.genome.gov/](https://docs.google.com/document/d/1SPHj5NHNn2IuBVOl9mcYAYWXMtXRJpJmp94xfVFGGE0/edit?usp=sharing)](https://docs.google.com/presentation/d/1KDHK6bUqUDKFj_a5gpaTFNGPWsFtQaExxg4gfcrC3iI/edit?usp=sharing))
