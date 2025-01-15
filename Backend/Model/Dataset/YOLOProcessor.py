@@ -4,6 +4,7 @@ import cv2
 
 class YOLOProcessor:
     def __init__(self, input_images_dir, input_labels_dir, output_dir, dataset_type="train"):
+        # Set up the directories
         self.input_images_dir = input_images_dir
         self.input_labels_dir = input_labels_dir
         self.output_dir = os.path.join(output_dir, dataset_type)
@@ -15,6 +16,7 @@ class YOLOProcessor:
         os.makedirs(self.output_labels_dir, exist_ok=True)
 
     def process_images_and_labels(self):
+        # Iterate through all label files
         for label_file in os.listdir(self.input_labels_dir):
             if not label_file.endswith(".txt"):
                 continue
@@ -79,13 +81,17 @@ class YOLOProcessor:
 
 # Main function to process datasets
 def main():
+    # Dataset types
     dataset_types = ["train", "valid", "test"]
 
     for dataset_type in dataset_types:
-        input_images_dir = f"DataSet/{dataset_type}/images"
-        input_labels_dir = f"DataSet/{dataset_type}/labels"
-        output_dir = "output"
+        # Use relative paths for the dataset directories
+        input_images_dir = f"Dataset/Dataset/{dataset_type}/images"
+        input_labels_dir = f"Dataset/Dataset/{dataset_type}/labels"
 
+        output_dir = "./output"
+
+        # Check if required directories exist
         if not os.path.exists(input_images_dir) or not os.path.exists(input_labels_dir):
             print(f"Skipping {dataset_type} dataset. Missing required directories.")
             continue
